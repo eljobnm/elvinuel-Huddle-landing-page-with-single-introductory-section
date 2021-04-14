@@ -1,0 +1,171 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    font-size: 100%;
+}
+
+body {
+    width:100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-position-x: -0.6875rem;
+    background-position-y: -1rem;
+    background-size: 103% 50%;
+    color: white;
+}
+.container {
+    width: 80vw;
+    height: 75vh;
+    margin: 2.375rem auto;
+    
+}
+.logo {
+    transform: translateX(-0.625rem);
+    width: 8.6rem;
+}
+.visual {
+    display: flex;
+    margin-top: 4.375rem;
+    flex-direction: column;
+    align-items: center;
+}
+.illustration {
+    width: 18.75rem;
+}
+h1 {
+    width: 16.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 4.375rem auto 0;
+    text-align: center;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.975rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color:hsl(257, 40%, 49%);
+    margin: 1.875rem;
+    border-radius: 1.25rem;
+    height: 2.5rem;
+    width: 12.5rem;
+    border-style: none;
+    filter: drop-shadow(0 2px 1px rgb(53, 51, 51));
+}
+.button:active{
+    color:white;
+    background: hsl(300, 69%, 71%);
+}
+.clear-fix {
+    display: block;
+    text-align: center;
+}
+ .fa-instagram, .fa-twitter, .fa-facebook-f{
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 50%;  
+    height: 32px;
+    width: 32px;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    margin-right: 0.34375rem;
+    margin-left: 0.34375rem;
+}
+.content {
+    text-align: center;
+}
+a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:active {
+    color: hsl(300, 69%, 71%);
+}
+.fa-instagram:active, .fa-twitter:active, .fa-facebook-f:active {
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-position-x: -0.6875rem;
+        background-position-y: 0rem;
+        background-size: 103% 86%;
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 93% 95%;
+        overflow: hidden;
+    }
+
+    .container {
+        
+        width: 91%;
+        margin-top: 56px;
+    }
+
+    .visual {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    .illustration {
+        height: 545px;
+        width: 60%;
+    }
+
+    .content {
+        height: 400px;
+        width: 36%;
+    }
+
+    .content:last-child {
+        text-align: left;
+    }
+    
+
+    h1{
+        text-align: left;
+        font-size: 27px;
+        width: 300px;
+        margin: 0;
+        line-height: 1.7;
+    }
+
+    p {
+        text-align: justify;
+        margin: 20px 0 0 0;
+    }
+    .button {
+        margin-left: 0;
+    }
+    
+    .clear-fix{
+        text-align: end;
+
+    }
+    .fa-instagram, .fa-twitter, .fa-facebook-f {
+        margin: -1px 3px 0 3px;
+        text-align: center;
+    }
+    
+}
+
